@@ -3,6 +3,7 @@ const changeButton = document.getElementById('name-change-button');
 const nameDisplay = document.getElementById('name');
 
 changeButton.addEventListener('click', () => {
+    if(nameInput.value === '') return;
     nameDisplay.textContent = nameInput.value;
     nameInput.value = '';
 });
